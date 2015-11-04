@@ -1,5 +1,19 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
+
+/* CLOCK */
+#include <time.h>
+clock_t t;
+void startClock()
+{
+	t = clock();
+}
+void stopClock()
+{
+	t = clock() - t;
+	printf ("RUNTIME: %d ticks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
+}
 
 void swap(int &a, int &b);
 int pivot(int a[], int first, int last);
@@ -9,6 +23,7 @@ int mf(int buff[], int n, int num);
 
 int main()
 {
+	clock_t t;	//runtime
 	int n;
 	int num;
 	int count;
@@ -16,9 +31,10 @@ int main()
 	int* buff=new int[n];
 	int* copy=new int[n];
 	count=0;
+	
 	while (count!=n)
 	{
-		scanf("%d", &buff[count]);
+		buff[count] = rand() % 156;
 		count++;
 	}
 	while (1)
@@ -31,7 +47,9 @@ int main()
 			copy[count]=buff[count];
 			count++;
 		}
+		startClock();	//runtime
 		mf(copy, n, num);
+		stopClock();	//runtime
 		count=0;
 		while (count!=n)
 		{
