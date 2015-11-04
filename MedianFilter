@@ -123,4 +123,7 @@ int mf(int buff[], int n, int num)
 		buff[index]=median(array, num);
 		index++;
 	}
+	delete[] copy;
+	delete[] array;
+	return 0;
 }
