@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdlib.h>
 using namespace std;
 
 /* CLOCK */
@@ -12,6 +11,9 @@ void startClock()
 void stopClock()
 {
 	t = clock() - t;
+}
+void printClock()
+{
 	printf ("RUNTIME: %d ticks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
 }
 
@@ -23,7 +25,6 @@ int mf(int buff[], int n, int num);
 
 int main()
 {
-	clock_t t;	//runtime
 	int n;
 	int num;
 	int count;
@@ -34,7 +35,7 @@ int main()
 	
 	while (count!=n)
 	{
-		buff[count] = rand() % 156;
+		scanf("%d", &buff[count]);
 		count++;
 	}
 	while (1)
@@ -57,6 +58,7 @@ int main()
 			count++;
 		}
 		printf("\n");
+		printClock();	//runtime
 	}
 }
 
