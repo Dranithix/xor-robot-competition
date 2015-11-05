@@ -68,9 +68,11 @@ public class Main extends JFrame {
 
 	private double[] generateNoisySignal(int len) {
 		double[] signal = new double[len];
-		for (int i = 0; i < len; i++) { 
-			signal[i] = Math.max(0, new Random().nextInt(156)); // Pure noise signal
-			// signal[i] = Math.max(0, new Random().nextInt(156) - i); // Descending noise signal
+		for (int i = 0; i < len; i++) {
+			signal[i] = Math.max(0, new Random().nextInt(156)); // Pure noise
+																// signal
+			// signal[i] = Math.max(0, new Random().nextInt(156) - i); //
+			// Descending noise signal
 		}
 		return signal;
 	}
@@ -211,67 +213,5 @@ public class Main extends JFrame {
 			}
 		}
 		return bitArray;
-	}
-
-	// public double[] ramerDouglasPeuckerFunction(double[] points,
-	// int startIndex, int endIndex) {
-	// double dmax = 0;
-	// int idx = 0;
-	// double a = endIndex - startIndex;
-	// double b = points[endIndex] - points[startIndex];
-	// double c = -(b * startIndex - a * points[startIndex]);
-	// double norm = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-	// for (int i = startIndex + 1; i < endIndex; i++) {
-	// double distance = Math.abs(b * i - a * points[i] + c) / norm;
-	// if (distance > dmax) {
-	// idx = i;
-	// dmax = distance;
-	// }
-	// }
-	// if (dmax >= epsilon) {
-	// double[] recursiveResult1 = ramerDouglasPeuckerFunction(points,
-	// startIndex, idx);
-	// double[] recursiveResult2 = ramerDouglasPeuckerFunction(points,
-	// idx, endIndex);
-	// double[] result = new double[(recursiveResult1.length - 1)
-	// + recursiveResult2.length];
-	// System.arraycopy(recursiveResult1, 0, result, 0,
-	// recursiveResult1.length - 1);
-	// System.arraycopy(recursiveResult2, 0, result,
-	// recursiveResult1.length - 1, recursiveResult2.length);
-	// System.out.println("SO FAR: " + Arrays.toString(result));
-	// return result;
-	// } else {
-	// return new double[] { points[startIndex], points[endIndex] };
-	// }
-	// }
-
-	class Point {
-		private double x, y;
-
-		public Point(double x, double y) {
-			this.x = x;
-			this.y = y;
-		}
-
-		public double getX() {
-			return x;
-		}
-
-		public void setX(double x) {
-			this.x = x;
-		}
-
-		public double getY() {
-			return y;
-		}
-
-		public void setY(double y) {
-			this.y = y;
-		}
-
-		public String toString() {
-			return String.format("x: %f y: %f", getX(), getY());
-		}
 	}
 }
