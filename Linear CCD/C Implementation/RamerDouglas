@@ -2,6 +2,22 @@
 #include <math.h>
 using namespace std;
 
+/* CLOCK */
+#include <time.h>
+clock_t t;
+void startClock()
+{
+	t = clock();
+}
+void stopClock()
+{
+	t = clock() - t;
+}
+void printClock()
+{
+	printf ("RUNTIME: %d ticks (%f seconds).\n",t,((float)t)/CLOCKS_PER_SEC);
+}
+
 float dist(int x, int y, int x1, int y1, int x2, int y2);
 int rdp(int buff[], int list[], float e, int start, int end);
 
@@ -37,7 +53,9 @@ int main()
 		/* processing */
 		list[0]=1;
 		list[n-1]=1;
+		startClock();	//runtime
 		rdp(buff, list, e, 0, n-1);
+		stopClock();	//runtime
 		/* output */
 		count=0;
 		while (count!=n)
@@ -48,6 +66,7 @@ int main()
 			}
 			count++;
 		}
+		printClock();	//runtime
 	}
 	return 0;
 }
