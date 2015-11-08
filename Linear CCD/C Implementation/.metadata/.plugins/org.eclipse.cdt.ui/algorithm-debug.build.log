@@ -1,0 +1,11 @@
+20:11:15 **** Incremental Build of configuration Debug for project algorithm-debug ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "algorithm-debug.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8296	   2400	    260	  10956	   2acc	algorithm-debug.elf
+Finished building: algorithm-debug.siz
+ 
+
+20:11:15 Build Finished (took 167ms)
+

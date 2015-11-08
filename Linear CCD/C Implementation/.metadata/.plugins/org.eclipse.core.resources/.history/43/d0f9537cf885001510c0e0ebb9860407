@@ -1,0 +1,1 @@
+void quickSort(uint32_t *a, int n);

@@ -1,0 +1,11 @@
+20:08:37 **** Incremental Build of configuration Debug for project xor-robot ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "xor-robot.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6008	    176	    420	   6604	   19cc	xor-robot.elf
+Finished building: xor-robot.siz
+ 
+
+20:08:37 Build Finished (took 250ms)
+
