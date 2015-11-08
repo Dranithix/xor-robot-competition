@@ -4923,3 +4923,245 @@ gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C 
   ^
 ..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
 gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:23:45 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+17:23:57 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+17:24:09 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:24:15 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+17:25:20 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:26:59 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c:3:6: error: conflicting types for 'quickSort'
+ void quickSort(uint32_t *a, uint32_t n) {
+      ^
+In file included from ..\src\Algorithms.c:1:0:
+C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\includes/Algorithms.h:8:6: note: previous declaration of 'quickSort' was here
+ void quickSort(uint32_t *a, int n);
+      ^
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:84:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:84:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+17:27:07 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:84:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:84:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file xor-robot.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:27:14 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/ld.exe: cannot open output file xor-robot.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:27:37 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+17:28:18 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:84:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:84:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:28:38 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+17:29:04 **** Clean-only build of configuration Debug for project xor-robot ****
+rm -rf xor-robot.exe src/Algorithms.d src/Algorithms.o 
+17:29:04 **** Rebuild of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+17:29:25 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:85:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:85:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:30:12 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:99:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:99:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:31:28 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c:56:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'ursion'
+ void douglasPeuckerRec ursion(uint32_t signal[], uint32_t list[], float e,
+                        ^
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:99:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:99:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+17:31:49 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:98:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:98:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+17:32:20 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'medianFilter':
+..\src\Algorithms.c:45:3: warning: pointer targets in passing argument 1 of 'quick_sort' differ in signedness [-Wpointer-sign]
+   quick_sort(window, sizeof(window) / sizeof(window[0]));
+   ^
+..\src\Algorithms.c:3:6: note: expected 'int *' but argument is of type 'uint32_t *'
+ void quick_sort (int *a, int n) {
+      ^
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:101:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:101:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:32:33 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:101:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:101:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:32:44 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:86:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:86:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:32:56 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:86:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:86:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:33:29 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:86:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:86:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+17:34:08 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'medianFilter':
+..\src\Algorithms.c:30:3: warning: implicit declaration of function 'quick_sort' [-Wimplicit-function-declaration]
+   quick_sort(window, sizeof(window) / sizeof(window[0]));
+   ^
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:86:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:86:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+src\Algorithms.o: In function `medianFilter':
+C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Algorithms.c:30: undefined reference to `quick_sort'
+collect2.exe: error: ld returned 1 exit status
+17:34:13 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Algorithms.o" "..\\src\\Algorithms.c" 
+..\src\Algorithms.c: In function 'calculateAreas':
+..\src\Algorithms.c:86:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(leftPartition, signal, 64 * sizeof(int));
+  ^
+..\src\Algorithms.c:86:2: warning: incompatible implicit declaration of built-in function 'memcpy' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" 
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot

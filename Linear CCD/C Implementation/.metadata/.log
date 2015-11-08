@@ -3876,3 +3876,13 @@ The release after Mars (4.5) will no longer support the deprecated usage!
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-11-08 17:17:19.991
 !MESSAGE Indexed 'xor-robot' (1 sources, 16 headers) in 0.095 sec: 1,519 declarations; 2,298 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2015-11-08 17:27:33.907
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@6a472b1e): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Connection is shut down null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2015-11-08 17:27:33.907
+!MESSAGE Connection is shut down
+
+!ENTRY org.eclipse.cdt.dsf 4 10004 2015-11-08 17:27:33.950
+!MESSAGE Invalid breakpoint parameter(s)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2015-11-08 17:27:33.950
+!MESSAGE Invalid breakpoint parameter(s)

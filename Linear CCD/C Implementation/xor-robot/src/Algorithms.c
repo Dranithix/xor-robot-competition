@@ -1,21 +1,23 @@
 #include <Algorithms.h>
 
 void quickSort(uint32_t *a, int n) {
-	int i, j, p, t;
-	p = a[n / 2];
-	for (i = 0, j = n - 1;; i++, j--) {
-		while (a[i] < p)
-			i++;
-		while (p < a[j])
-			j--;
-		if (i >= j)
-			break;
-		t = a[i];
-		a[i] = a[j];
-		a[j] = t;
-	}
-	quickSort(a, i);
-	quickSort(a + i, n - i);
+    int i, j, p, t;
+    if (n < 2)
+        return;
+    p = a[n / 2];
+    for (i = 0, j = n - 1;; i++, j--) {
+        while (a[i] < p)
+            i++;
+        while (p < a[j])
+            j--;
+        if (i >= j)
+            break;
+        t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+    }
+    quickSort(a, i);
+    quickSort(a + i, n - i);
 }
 
 uint32_t * medianFilter(uint32_t * signal, int windowLen) {
@@ -25,7 +27,7 @@ uint32_t * medianFilter(uint32_t * signal, int windowLen) {
 		for (int j = 0; j < windowLen; ++j) {
 			window[j] = signal[i - (windowLen / 2) + j];
 		}
-		quickSort(window, windowLen);
+		quickSort(window, sizeof(window) / sizeof(window[0]));
 		result[i - (windowLen / 2)] = window[windowLen / 2];
 	}
 	return result;
@@ -39,8 +41,7 @@ uint32_t pointDistanceToLine(int x, int y, int x1, int y1, int x2, int y2) {
 	return abs(a * d - c * b) / pow(c * c + d * d, 0.5);
 }
 
-void douglasPeuckerRecursion(uint32_t signal[], uint32_t list[], float e,
-		int start, int end) {
+void douglasPeuckerRecursion(uint32_t signal[], uint32_t list[], float e, int start, int end) {
 	int index = -1;
 	int count = start + 1;
 	float distance = 0;
@@ -123,13 +124,18 @@ double calculateAreas(uint32_t signal[]) {
 
 int main() {
 	uint32_t * signal = malloc(128 * sizeof(int));
-
 	srand(time(NULL));
 	for (int i = 0; i < 128; i++) {
 		int signalVal = (rand() % 156) - i;
 		signal[i] = 0 > signalVal ? 0 : signalVal;
+	}
+	signal = medianFilter(signal, 5);
+	douglasPeucker(signal, 10);
+
+	for (int i = 0; i < 128; i++) {
 		printf("%d ", signal[i]);
 	}
-	printf("\n%f", calculateAreas(signal));
+
+	printf("\nLeft to Right Area Ratio: %f", calculateAreas(signal));
 	return 0;
 }
