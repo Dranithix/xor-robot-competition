@@ -5165,3 +5165,912 @@ Info: Nothing to build for xor-robot
 Info: Nothing to build for xor-robot
 Info: Nothing to build for xor-robot
 Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+16:47:06 **** Rebuild of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:3:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("test" + "testtwo");
+  ^
+..\src\Test.c:3:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:3:16: error: invalid operands to binary + (have 'char *' and 'char *')
+  printf("test" + "testtwo");
+                ^
+16:47:34 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:3:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf(strcat("Test", "Testtwo"));
+  ^
+..\src\Test.c:3:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+gcc -o xor-robot.exe "src\\Algorithms.o" "src\\Test.o" 
+src\Test.o: In function `main':
+C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Test.c:2: multiple definition of `main'
+src\Algorithms.o:C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Algorithms.c:125: first defined here
+collect2.exe: error: ld returned 1 exit status
+16:47:47 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc -o xor-robot.exe "src\\Test.o" "src\\Algorithms.o" 
+src\Algorithms.o: In function `main':
+C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Algorithms.c:125: multiple definition of `main'
+src\Test.o:C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Test.c:2: first defined here
+collect2.exe: error: ld returned 1 exit status
+16:48:02 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+16:48:16 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:3:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%s", strcat("Test", "Testtwo"));
+  ^
+..\src\Test.c:3:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+gcc -o xor-robot.exe "src\\Test.o" 
+16:49:55 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:7:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%s", test);
+  ^
+..\src\Test.c:7:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:7:2: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'uint32_t *' [-Wformat=]
+gcc -o xor-robot.exe "src\\Test.o" 
+16:50:20 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf(++test);
+   ^
+..\src\Test.c:8:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:8:10: error: lvalue required as increment operand
+   printf(++test);
+          ^
+16:50:29 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%s", ++test);
+   ^
+..\src\Test.c:8:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:8:16: error: lvalue required as increment operand
+   printf("%s", ++test);
+                ^
+16:51:10 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%s", *test);
+   ^
+..\src\Test.c:8:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:8:3: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'uint32_t' [-Wformat=]
+gcc -o xor-robot.exe "src\\Test.o" 
+16:51:16 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%s", test);
+   ^
+..\src\Test.c:8:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:8:3: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'uint32_t *' [-Wformat=]
+gcc -o xor-robot.exe "src\\Test.o" 
+16:51:53 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:7:14: error: lvalue required as increment operand
+  while (*test++) {
+              ^
+..\src\Test.c:8:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:8:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:8:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+16:52:37 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:8:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:8:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+gcc -o xor-robot.exe "src\\Test.o" 
+16:52:47 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:7: error: lvalue required as increment operand
+   test++;
+       ^
+..\src\Test.c:9:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:9:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:9:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+16:52:49 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:7: error: lvalue required as increment operand
+   test++;
+       ^
+..\src\Test.c:9:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:9:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:9:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+16:52:50 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:8:7: error: lvalue required as increment operand
+   test++;
+       ^
+..\src\Test.c:9:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:9:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:9:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+16:53:14 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+  uint32_t * test = {-1, -1, -1, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, -1, -1, -1, -1, 159, 159, -1, 159, 159, -1, 159, 159, 159, 159, -1, 159, -1, 159, -1, 77, 77, 77, -1, 65, 65, 65, 65, -1, 60, -1, 60, 58, 57, 57, 57, 57, 58, 58, 58, 58, 62, 62, 62, 62, 73, 76, 76, 76, 111, 151, 151, 151, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, -1, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 0, 0, 0, 0};
+  ^
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:6:2: warning: excess elements in scalar initializer [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test') [enabled by default]
+..\src\Test.c:9:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:9:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:9:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+16:53:31 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+  uint32_t * test[] = {-1, -1, -1, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, -1, -1, -1, -1, 159, 159, -1, 159, 159, -1, 159, 159, 159, 159, -1, 159, -1, 159, -1, 77, 77, 77, -1, 65, 65, 65, 65, -1, 60, -1, 60, 58, 57, 57, 57, 57, 58, 58, 58, 58, 62, 62, 62, 62, 73, 76, 76, 76, 111, 151, 151, 151, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, -1, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 159, 0, 0, 0, 0};
+  ^
+..\src\Test.c:6:2: warning: (near initialization for 'test[0]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[1]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[2]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[3]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[4]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[5]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[6]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[7]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[8]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[9]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[10]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[11]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[12]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[13]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[14]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[15]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[16]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[17]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[18]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[19]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[20]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[21]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[22]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[23]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[24]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[25]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[26]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[27]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[28]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[29]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[30]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[31]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[32]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[33]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[34]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[35]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[36]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[37]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[38]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[39]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[40]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[41]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[42]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[43]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[44]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[45]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[46]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[47]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[48]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[49]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[50]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[51]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[52]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[53]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[54]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[55]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[56]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[57]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[58]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[59]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[60]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[61]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[62]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[63]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[64]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[65]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[66]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[67]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[68]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[69]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[70]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[71]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[72]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[73]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[74]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[75]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[76]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[77]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[78]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[79]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[80]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[81]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[82]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[83]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[84]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[85]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[86]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[87]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[88]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[89]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[90]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[91]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[92]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[93]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[94]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[95]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[96]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[97]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[98]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[99]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[100]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[101]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[102]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[103]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[104]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[105]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[106]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[107]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[108]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[109]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[110]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[111]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[112]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[113]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[114]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[115]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[116]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[117]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[118]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[119]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[120]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[121]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[122]') [enabled by default]
+..\src\Test.c:6:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+..\src\Test.c:6:2: warning: (near initialization for 'test[123]') [enabled by default]
+..\src\Test.c:8:7: error: lvalue required as increment operand
+   test++;
+       ^
+..\src\Test.c:9:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:9:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:9:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t **' [-Wformat=]
+16:54:25 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:9:7: warning: 'test' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   test[i] = thing[i];
+       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+16:54:41 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+gcc -o xor-robot.exe "src\\Test.o" 
+16:54:53 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+gcc -o xor-robot.exe "src\\Test.o" 
+16:56:08 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%s", test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:13:3: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'uint32_t *' [-Wformat=]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+16:56:16 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d", test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:13:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:56:20 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:13:3: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t *' [-Wformat=]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:56:26 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%x ", test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:13:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t *' [-Wformat=]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:56:29 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%f ", test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:13:3: warning: format '%f' expects argument of type 'double', but argument 2 has type 'uint32_t *' [-Wformat=]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:56:31 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%x ", test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:13:3: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t *' [-Wformat=]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:56:48 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", (int) test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:57:07 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", (int) *test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+16:57:14 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", *test);
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:57:42 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", sizeof(*test));
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+16:58:03 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", sizeof(test));
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:58:25 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:13:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d ", sizeof(*test) / sizeof(uint32_t));
+   ^
+..\src\Test.c:13:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+16:59:57 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:14:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   sprintf(num, "%d ", *test);
+   ^
+..\src\Test.c:14:3: warning: incompatible implicit declaration of built-in function 'sprintf' [enabled by default]
+..\src\Test.c:15:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%s", num);
+   ^
+..\src\Test.c:15:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+..\src\Test.c:14:10: warning: 'num' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   sprintf(num, "%d ", *test);
+          ^
+gcc -o xor-robot.exe "src\\Test.o" 
+17:00:06 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:14:3: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   sprintf(num, "%d ", *test);
+   ^
+..\src\Test.c:14:3: warning: incompatible implicit declaration of built-in function 'sprintf' [enabled by default]
+..\src\Test.c:15:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%s", num);
+   ^
+..\src\Test.c:15:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:11:9: warning: unused variable 'ccdBuffer' [-Wunused-variable]
+  char * ccdBuffer = malloc(1024 * sizeof(char));
+         ^
+gcc -o xor-robot.exe "src\\Test.o" 
+21:27:08 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:6:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%d", (int) "1");
+  ^
+..\src\Test.c:6:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+gcc -o xor-robot.exe "src\\Test.o" 
+21:27:40 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:6:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%d", (int) '1');
+  ^
+..\src\Test.c:6:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+gcc -o xor-robot.exe "src\\Test.o" 

@@ -1,0 +1,30 @@
+
+T11604 000:264 SEGGER J-Link V4.98e Log File (0000ms, 0258ms total)
+T11604 000:264 DLL Compiled: May  5 2015 11:00:52 (0000ms, 0258ms total)
+T11604 000:264 Logging started @ 2015-11-07 05:13 (0000ms, 0258ms total)
+T11604 000:264 JLINK_SetWarnOutHandler(...) (0000ms, 0258ms total)
+T11604 000:264 JLINK_OpenEx(...)
+Firmware: J-Link ARM-OB STM32 compiled Aug 22 2012 19:52:04
+Hardware: V7.00
+S/N: 20090928
+Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFull  returns O.K. (0258ms, 0516ms total)
+T11604 000:522 JLINK_SetErrorOutHandler(...) (0000ms, 0516ms total)
+T11604 000:522 JLINK_ExecCommand("ProjectFile = "C:\Users\user\Desktop\2016_sw_ library_3.0\JLinkSettings.ini"", ...)  returns 0x00 (0000ms, 0516ms total)
+T11604 000:522 JLINK_ExecCommand("Device = STM32F103CB", ...)Device "STM32F103CB" selected.  returns 0x00 (0000ms, 0516ms total)
+T11604 000:522 JLINK_ExecCommand("DisableConnectionTimeout", ...)  returns 0x01 (0000ms, 0516ms total)
+T11604 000:522 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0516ms total)
+T11604 000:522 JLINK_GetDLLVersion()  returns 49805 (0000ms, 0516ms total)
+T11604 000:522 JLINK_GetFirmwareString(...) (0000ms, 0516ms total)
+T11604 000:524 JLINK_GetDLLVersion()  returns 49805 (0000ms, 0516ms total)
+T11604 000:524 JLINK_GetCompileDateTime() (0000ms, 0516ms total)
+T11604 000:524 JLINK_GetFirmwareString(...) (0000ms, 0516ms total)
+T11604 000:525 JLINK_GetHardwareVersion()  returns 0x11170 (0000ms, 0516ms total)
+T11604 000:526 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0001ms, 0517ms total)
+T11604 000:527 JLINK_SetSpeed(50000) (0000ms, 0517ms total)
+T11604 000:527 JLINK_GetId() >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF> >0x108 TIF>STM32Fxxxx: Cannot attach to CPU. Trying connect under reset. >0x108 TIF> >0x108 TIF>
+                JLINK_EMU_HasCapEx(0x0000002C)  returns 0x00 (0000ms, 0000ms total)
+                JLINK_EMU_HasCapEx(0x0000002C)  returns 0x00 (0000ms, 0000ms total)
+                returns 0x00000000 (0827ms, 1344ms total)
+T11604 004:498 JLINK_Close() (0000ms, 1344ms total)
+T11604 004:498  (0000ms, 1344ms total)
+T11604 004:498 Closed (0000ms, 1344ms total)
