@@ -1,0 +1,29 @@
+#include <string.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+
+void handleCommand(char * command) {
+
+	int dataIndex = 0, contentIndex = 0, header = -1;
+
+	int contents[16];
+	for (char * data = strtok(command, "|"); data != NULL; data = strtok(NULL, "|")) {
+		if (dataIndex == 0) {
+			header = atoi(data);
+		} else {
+			contents[contentIndex++] = atoi(data);
+		}
+		dataIndex++;
+	}
+
+	for (int i = 0; i < 14; i++) {
+		printf("%d\n", contents[i]);
+	}
+}
+
+
+int main() {
+	char * thing = "0|2|0|186";
+	handleCommand(thing);
+}

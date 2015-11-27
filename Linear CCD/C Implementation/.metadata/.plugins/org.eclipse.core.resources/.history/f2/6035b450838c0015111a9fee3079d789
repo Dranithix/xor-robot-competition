@@ -10,15 +10,16 @@ void handleCommand(char * command) {
 	int contents[16];
 	char * token = strtok(command, "|");
 	while (token != NULL) {
-		printf("%d\n", atoi(token));
+		printf(" %s\n", token);
 		token = strtok(NULL, "|");
 	}
 
-//	for (int i = 0; i < 14; i++) {
-//		printf("%d\n", contents[i]);
-//	}
+	for (int i = 0; i < 14; i++) {
+		printf("%d\n", contents[i]);
+	}
 }
 
 int main() {
-	printf("%02x", (uint16_t) 0x55);
+	char thing[] = "0|2|0|186";
+	handleCommand(thing);
 }

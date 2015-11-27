@@ -1,0 +1,29 @@
+#include <string.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+
+void handleCommand(char * command) {
+
+	int dataIndex = 0, contentIndex = 0, header = -1;
+
+	int contents[16];
+	char * token = strtok( string, seps );
+	    while( token != NULL )
+	    {
+	        /* While there are tokens in "string" */
+	        printf( " %s\n", token );
+	        /* Get next token: */
+	        token = strtok( NULL, seps );
+	    }
+
+	for (int i = 0; i < 14; i++) {
+		printf("%d\n", contents[i]);
+	}
+}
+
+
+int main() {
+	char * thing = "0|2|0|186";
+	handleCommand(thing);
+}

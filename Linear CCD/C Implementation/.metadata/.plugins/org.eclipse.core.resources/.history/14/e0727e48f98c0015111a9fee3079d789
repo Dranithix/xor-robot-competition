@@ -20,5 +20,5 @@ void handleCommand(char * command) {
 }
 
 int main() {
-	printf("%02x", (uint16_t) 0x55);
+	printf("%02x", 0x55);
 }

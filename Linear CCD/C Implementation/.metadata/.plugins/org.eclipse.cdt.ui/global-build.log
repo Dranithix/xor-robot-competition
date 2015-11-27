@@ -6074,3 +6074,334 @@ gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C 
   ^
 ..\src\Test.c:6:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
 gcc -o xor-robot.exe "src\\Test.o" 
+18:53:53 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'main':
+..\src\Test.c:6:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("%d|%d", 1, 2);
+  ^
+..\src\Test.c:6:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+gcc -o xor-robot.exe "src\\Test.o" 
+00:49:11 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:20:3: warning: implicit declaration of function 'println' [-Wimplicit-function-declaration]
+   println("%d", contents[i]);
+   ^
+..\src\Test.c:7:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+src\Test.o: In function `handleCommand':
+C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Test.c:20: undefined reference to `println'
+collect2.exe: error: ld returned 1 exit status
+00:49:28 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:20:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d\n", contents[i]);
+   ^
+..\src\Test.c:20:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:7:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+00:49:59 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:20:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   printf("%d\n", contents[i]);
+   ^
+..\src\Test.c:20:3: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+..\src\Test.c:7:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:50:32 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:50:45 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:51:14 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: variable 'contents' set but not used [-Wunused-but-set-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+Info: Nothing to build for xor-robot
+00:51:32 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: unused variable 'contents' [-Wunused-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:51:39 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:51:50 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:52:05 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:52:25 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:17:3: warning: implicit declaration of function 'println' [-Wimplicit-function-declaration]
+   println("%d", dataIndex);
+   ^
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+src\Test.o: In function `handleCommand':
+C:\Users\user\Documents\GitHub\xor-robot-competition\Linear CCD\C Implementation\xor-robot\Debug/../src/Test.c:17: undefined reference to `println'
+collect2.exe: error: ld returned 1 exit status
+00:52:32 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:53:25 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: variable 'header' set but not used [-Wunused-but-set-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:53:35 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:54:07 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c:6:27: error: expected ';', ',' or ')' before 'command'
+ void handleCommand(char[] command) {
+                           ^
+..\src\Test.c: In function 'main':
+..\src\Test.c:27:6: error: expected identifier or '(' before '[' token
+  char[] thing = "0|2|0|186";
+      ^
+..\src\Test.c:28:2: warning: implicit declaration of function 'handleCommand' [-Wimplicit-function-declaration]
+  handleCommand(thing);
+  ^
+..\src\Test.c:28:16: error: 'thing' undeclared (first use in this function)
+  handleCommand(thing);
+                ^
+..\src\Test.c:28:16: note: each undeclared identifier is reported only once for each function it appears in
+00:54:30 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:54:38 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c: In function 'main':
+..\src\Test.c:27:6: error: expected identifier or '(' before '[' token
+  char[] thing = "0|2|0|186";
+      ^
+..\src\Test.c:28:16: error: 'thing' undeclared (first use in this function)
+  handleCommand(thing);
+                ^
+..\src\Test.c:28:16: note: each undeclared identifier is reported only once for each function it appears in
+00:58:23 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:58:45 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:58:54 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: unused variable 'contents' [-Wunused-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:59:10 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: unused variable 'contents' [-Wunused-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+00:59:17 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: unused variable 'contents' [-Wunused-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+15:03:03 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: unused variable 'contents' [-Wunused-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
+Info: Nothing to build for xor-robot
+15:03:16 **** Incremental Build of configuration Debug for project xor-robot ****
+Info: Internal Builder is used for build
+gcc "-IC:\\Users\\user\\Documents\\GitHub\\xor-robot-competition\\Linear CCD\\C Implementation\\xor-robot\\includes" -O0 -g3 -Wall -c -fmessage-length=0 -std=c99 -o "src\\Test.o" "..\\src\\Test.c" 
+..\src\Test.c: In function 'handleCommand':
+..\src\Test.c:10:6: warning: unused variable 'contents' [-Wunused-variable]
+  int contents[16];
+      ^
+..\src\Test.c:8:39: warning: unused variable 'header' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                                       ^
+..\src\Test.c:8:21: warning: unused variable 'contentIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+                     ^
+..\src\Test.c:8:6: warning: unused variable 'dataIndex' [-Wunused-variable]
+  int dataIndex = 0, contentIndex = 0, header = -1;
+      ^
+gcc -o xor-robot.exe "src\\Test.o" 
