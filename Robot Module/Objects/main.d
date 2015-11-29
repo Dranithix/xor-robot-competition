@@ -34,5 +34,6 @@
 .\objects\main.o: button.h
 .\objects\main.o: uart.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\main.o: pneumatic_control.h
 .\objects\main.o: servo_tutorial.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

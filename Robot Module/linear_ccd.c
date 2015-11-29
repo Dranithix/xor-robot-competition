@@ -7,9 +7,6 @@ u8 l_edge = 0;
 u8 r_edge = 0;
 u8 mid = 0;
 
-u32 * get_linear_ccd1() {
-	return linear_ccd_buffer1;
-}
 
 void delay_57(void){
 	for(int i = 0;i <4;++i){

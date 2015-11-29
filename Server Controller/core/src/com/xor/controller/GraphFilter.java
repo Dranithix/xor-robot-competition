@@ -2,20 +2,20 @@ package com.xor.controller;
 
 import java.util.AbstractMap.SimpleEntry;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Stack;
 
 import com.badlogic.gdx.math.Bresenham2;
 import com.badlogic.gdx.math.GridPoint2;
 import com.badlogic.gdx.math.Interpolation;
-import com.badlogic.gdx.math.Polygon;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.FloatArray;
+import com.badlogic.gdx.utils.Sort;
 
 public class GraphFilter {
-	private Array<Vector2> lastFilteredData;
-	private FloatArray filteredAreas = new FloatArray();
+	private Array<Vector2> lastFilteredData = new Array<Vector2>();
+	private Array<Vector2> localMaximas = new Array<Vector2>();
 
 	public Array<Vector2> filterGraph(float[] data) {
 		data = medianFilter(data, 5);
@@ -25,7 +25,7 @@ public class GraphFilter {
 			filteredData.add(new Vector2(i, (float) data[i]));
 		}
 
-		int[] filteredIndices = douglasPeuckerFilter(data, 3);
+		int[] filteredIndices = douglasPeuckerFilter(data, 15);
 
 		Iterator<Vector2> it = filteredData.iterator();
 		int removeIndex = 0;
@@ -37,7 +37,7 @@ public class GraphFilter {
 		}
 
 		filteredData = bresenham(filteredData);
-		if (lastFilteredData != null) {
+		if (lastFilteredData.size > 0) {
 			for (int i = 0; i < filteredData.size; i++) {
 				filteredData.set(
 						i,
@@ -48,7 +48,16 @@ public class GraphFilter {
 		}
 		lastFilteredData = new Array<Vector2>(filteredData);
 
-		calculateAreas(filteredData);
+		Sort.instance().sort(filteredData, new Comparator<Vector2>() {
+
+			@Override
+			public int compare(Vector2 arg0, Vector2 arg1) {
+				return (int) (arg0.x - arg1.x);
+			}
+
+		});
+
+		calculateIdealMaximum(filteredData);
 		return filteredData;
 	}
 
@@ -72,42 +81,27 @@ public class GraphFilter {
 		return result;
 	}
 
-	private void calculateAreas(Array<Vector2> signal) {
-		filteredAreas.clear();
-		
-		float[] buff = new float[84];
-		for (int i = 0, x = 0; i < 42; i++) {
-			buff[x++] = i;
-			buff[x++] = signal.get(i).y;
-		}
-		buff[1] = 0;
-		buff[83] = 0;
-		
-		filteredAreas.add(Math.abs(new Polygon(buff).area()));
+	private void calculateIdealMaximum(Array<Vector2> signal) {
+		localMaximas.clear();
 
-		buff = new float[88];
-		for (int i = 42, x = 0; i < 86; i++) {
-			buff[x++] = i;
-			buff[x++] = signal.get(i).y;
+		Vector2 max = signal.get(0);
+		for (int i = 0; i < signal.size; i++) {
+			if (max.y < signal.get(i).y) {
+				max = signal.get(i);
+			}
 		}
-		buff[1] = 0;
-		buff[87] = 0;
-		
-		filteredAreas.add(Math.abs(new Polygon(buff).area()));
 
-		buff = new float[84];
-		for (int i = 86, x = 0; i < 128; i++) {
-			buff[x++] = i;
-			buff[x++] = signal.get(i).y;
+		if (max.y > 20) {
+			for (int i = 0; i < signal.size; i++) {
+				if (max.y == signal.get(i).y) {
+					localMaximas.add(signal.get(i));
+				}
+			}
 		}
-		buff[1] = 0;
-		buff[83] = 0;
-		
-		filteredAreas.add(Math.abs(new Polygon(buff).area()));
 	}
 
-	public FloatArray getFilteredAreas() {
-		return filteredAreas;
+	public Array<Vector2> getLocalMaximas() {
+		return localMaximas;
 	}
 
 	private float[] medianFilter(float[] signal, int windowLen) {

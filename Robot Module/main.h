@@ -17,6 +17,7 @@
 #include "GPIO_switch.h"
 #include "button.h"
 #include "uart.h"
+#include "pneumatic_control.h"
 #include "servo_tutorial.h"
 
 #endif /* __MAIN_H */

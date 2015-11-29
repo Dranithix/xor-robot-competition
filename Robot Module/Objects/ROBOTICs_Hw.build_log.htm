@@ -22,13 +22,13 @@ Dialog DLL:      TCM.DLL V1.14.5.0
  
 <h2>Project:</h2>
 C:\Users\user\Desktop\2016_sw_ library_3.0\ROBOTICs_Hw.uvprojx
-Project File Date:  11/12/2015
+Project File Date:  11/16/2015
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 (build 20)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'STM32f103CBT_TEMPLATE'
 compiling main.c...
-ticks.h(16): warning:  #1295-D: Deprecated declaration simple_delay1_ms - give arg types
+ticks.h(19): warning:  #1295-D: Deprecated declaration simple_delay1_ms - give arg types
   void simple_delay1_ms();
 LEDs.h(3): warning:  #1295-D: Deprecated declaration LED_INIT - give arg types
   void LED_INIT();
@@ -58,24 +58,26 @@ button.h(12): warning:  #1-D: last line of file ends without a newline
   void check_button();
 button.h(12): warning:  #1295-D: Deprecated declaration check_button - give arg types
   void check_button();
-main.c(11): warning:  #550-D: variable "contents" was set but never used
-  	int contents[16];
-main.c(74): warning:  #111-D: statement is unreachable
-  	return 0;
-main.c(75): warning:  #1-D: last line of file ends without a newline
+pneumatic_control.h(5): warning:  #1295-D: Deprecated declaration pneumatic_init - give arg types
+  void pneumatic_init();
+pneumatic_control.h(6): warning:  #1-D: last line of file ends without a newline
+  void pneumatic_control(GPIO_TypeDef* PORT,u16 gpio_pin,u8 state);
+main.c(116): warning:  #111-D: statement is unreachable
+      return 0;
+main.c(117): warning:  #1-D: last line of file ends without a newline
   }
-main.c: 18 warnings, 0 errors
+main.c: 19 warnings, 0 errors
 linking...
-Program Size: Code=24820 RO-data=876 RW-data=8320 ZI-data=4928  
+Program Size: Code=25288 RO-data=876 RW-data=8328 ZI-data=4928  
 FromELF: creating hex file...
-".\Objects\ROBOTICs_Hw.axf" - 0 Error(s), 18 Warning(s).
+".\Objects\ROBOTICs_Hw.axf" - 0 Error(s), 19 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   C:\Users\user\Desktop\2016_sw_ library_3.0\RTE
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

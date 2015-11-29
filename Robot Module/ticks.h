@@ -13,6 +13,9 @@ extern volatile u16 ticks;
 u16 get_ms_ticks(void);
 void ticks_init(void);
 
+void _delay_us(u32 nus);
+void _delay_ms(u16 nms);
+
 void simple_delay1_ms();
 
 #endif

@@ -28,8 +28,8 @@ void motor_init(){
 	TIM_TimeBaseStructure.TIM_RepetitionCounter = 0;
 
 	//------------------------------//
-	int TODO_Prescaler = 35;
-	int TODO_Period = 300;
+	int TODO_Prescaler = 71;
+	int TODO_Period = 200;
 	TIM_TimeBaseStructure.TIM_Prescaler = TODO_Prescaler;												//clk=72M/(71+1)= Hz, interval=? 
 	TIM_TimeBaseStructure.TIM_Period = TODO_Period;												//pulse cycle=x  xperiod for one up
 	//------------------------------//366hz
@@ -41,13 +41,13 @@ void motor_init(){
 	// ------------OC Init Configuration------------//
 	TIM_OCInitStructure.TIM_OCPolarity = TIM_OCPolarity_High;   		// set "high" to be effective output
 	TIM_OCInitStructure.TIM_OCNPolarity = TIM_OCPolarity_High;   		// set "high" to be effective output
-	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM1;	           		// produce output when counter < CCR
+	TIM_OCInitStructure.TIM_OCMode = TIM_OCMode_PWM2;	           		// produce output when counter < CCR
 	TIM_OCInitStructure.TIM_OCIdleState = TIM_OCIdleState_Reset;		// Reset OC Idle state
 	TIM_OCInitStructure.TIM_OCNIdleState = TIM_OCNIdleState_Reset;	// Reset OC NIdle state
 	TIM_OCInitStructure.TIM_OutputState = TIM_OutputState_Enable;  	// this part enable the normal output
 	TIM_OCInitStructure.TIM_OutputNState = TIM_OutputNState_Enable; // this part enable the Nstate
 	//------------------------------//
-	TIM_OCInitStructure.TIM_Pulse = 1000;														// this part sets the initial CCR value that mean the pwm value
+	TIM_OCInitStructure.TIM_Pulse = 200;														// this part sets the initial CCR value that mean the pwm value
 	//------------------------------//
 	\
 	// OC Init

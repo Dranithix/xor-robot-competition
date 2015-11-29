@@ -38,6 +38,9 @@ TICKS_IRQHandler
 	}
 }
 
+static __IO uint32_t TimingDelay;
+u8 using_delay = 0;
+
 __asm void simple_delay10_us(){
 	MOV		R0, #115
 loop
@@ -45,6 +48,72 @@ loop
     CMP     R0, #0
     BNE        loop
     BX     LR
+}
+
+/**
+  * @brief  Generate a delay (in us)
+  * @param  nus: us to be delayed
+  * @retval None
+  */
+void _delay_us( u32 nus)
+{
+	u32 temp;
+	if( using_delay == 0 ){
+		using_delay = 1;
+		SysTick->LOAD = 9*nus;
+		SysTick->VAL = 0x00;
+		SysTick->CTRL = 0x01;
+		do
+		{
+			temp=SysTick->CTRL;
+		}while((temp&0x01)&&(!(temp&(1<<16))));
+		SysTick->CTRL = 0x00;
+		SysTick->VAL = 0x00;
+		using_delay = 0;
+	}
+	else{
+		nus = nus / 10;
+		while( nus -- ){
+			simple_delay10_us();
+		}
+	}
+}
+
+/**
+  * @brief  Generate a delay (in ms)
+  * @param  nms: ms to be delayed
+  * @retval None
+  */
+void _delay_ms( u16 nms )
+{
+	u32 temp;
+	u16 ms ; 
+	if( using_delay == 0 ){
+		using_delay = 1;
+		while( nms ){
+		
+		ms = ( nms > 1000 ) ? 1000 : nms;
+		
+		SysTick->LOAD = 9000*ms;
+		SysTick->VAL = 0x00;
+		SysTick->CTRL = 0x01;
+		do
+		{
+			temp = SysTick->CTRL;
+		}while((temp&0x01)&&(!(temp&(1<<16))));
+		SysTick->CTRL=0x00;
+		SysTick->VAL=0x00;
+		
+		nms -= ms;
+		}
+		using_delay = 0;
+	}
+	else{
+		while( nms -- ){
+			simple_delay1_ms();
+		}
+			
+	}
 }
 
 void simple_delay1_ms(){
