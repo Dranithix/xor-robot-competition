@@ -1,3 +1,4 @@
+
 package com.xor.controller.net;
 
 import com.badlogic.gdx.utils.Array;

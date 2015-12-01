@@ -25,10 +25,10 @@ public class LinearCCDWindow extends VisWindow {
 		TableBuilder builder = new OneColumnTableBuilder(new Padding(2, 3));
 
 		setMovable(false);
-
-		builder.append(CellWidget.of(new CCDGraphActor(serialThread)).expandX()
-				.expandY().fillX().fillY().wrap());
-		builder.row();
+//
+//		builder.append(CellWidget.of(new CCDGraphActor(serialThread)).expandX()
+//				.expandY().fillX().fillY().wrap());
+//		builder.row();
 
 		builder.append(lblTracerDirection = new VisLabel("Direction: STRAIGHT"));
 		builder.row();

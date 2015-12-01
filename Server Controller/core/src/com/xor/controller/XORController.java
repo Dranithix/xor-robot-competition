@@ -44,9 +44,9 @@ public class XORController extends ControllerAdapter implements
 	private SettingsWindow settingsWindow;
 	private MapEditWindow mapEditWindow;
 
-	private ControllerRecorder recorder;
+	private ControllerRecorder startRecorder, endRecorder;
 	private long recorderInitTime;
-	private boolean recording = false;
+	private boolean recordingStart = false, recordingEnd = false;
 
 	private Stage stage;
 
@@ -90,7 +90,8 @@ public class XORController extends ControllerAdapter implements
 
 		Controllers.addListener(this);
 
-		recorder = new ControllerRecorder();
+		startRecorder = new ControllerRecorder("start");
+		endRecorder = new ControllerRecorder("end");
 	}
 
 	@Override
@@ -120,6 +121,11 @@ public class XORController extends ControllerAdapter implements
 	float getDegreeDelay45(int x) {
 		return ((float) (1.3977 * Math.pow(x, 2) - 12.817 * x + 368.68)) / 1000f;
 	}
+	
+	float getTilesPerDistance(float x) {
+		System.out.println(((float) (0.05 * Math.pow(x, 2) + 0.35 * x + 0.3)));
+		return ((float) (0.05 * Math.pow(x, 2) + 0.35 * x + 0.3));
+	}
 
 	@Override
 	public boolean buttonUp(Controller controller, int buttonIndex) {
@@ -141,31 +147,33 @@ public class XORController extends ControllerAdapter implements
 	public boolean buttonDown(Controller controller, int buttonCode) {
 		System.out.println("Button Code: " + buttonCode);
 		switch (buttonCode) {
-		case 0: // Shot
+		case 0: // Shoot
 			serialThread.sendEvent(new PneumaticsControlEvent(
-					PneumaticsControlEvent.VALVE_SERVE_RACKET, true));
+					PneumaticsControlEvent.VALVE_SERVE_SHUTTLECOCK, true));
+			Timer.instance().scheduleTask(new Task() {
+
+				@Override
+				public void run() {
+					serialThread.sendEvent(new PneumaticsControlEvent(
+							PneumaticsControlEvent.VALVE_SERVE_RACKET, true));
+				}
+
+			}, 0.15f);
 			Timer.instance().scheduleTask(new Task() {
 
 				@Override
 				public void run() {
 					serialThread.sendEvent(new PneumaticsControlEvent(
 							PneumaticsControlEvent.VALVE_SERVE_RACKET, false));
+					serialThread.sendEvent(new PneumaticsControlEvent(
+							PneumaticsControlEvent.VALVE_SERVE_SHUTTLECOCK,
+							false));
 				}
 
-			}, 1);
+			}, 1.12f);
 			break;
-		case 9: // Start Button
-			MANUAL_MODE = !MANUAL_MODE;
-
-			serialThread.sendEvent(new MotorControlEvent(
-					MotorControlEvent.MOTOR_LEFT,
-					MotorControlEvent.MOTOR_FORWARD, 200));
-			serialThread.sendEvent(new MotorControlEvent(
-					MotorControlEvent.MOTOR_RIGHT,
-					MotorControlEvent.MOTOR_FORWARD, 200));
-			break;
-		case 1:
-			this.moveSec(Timer.instance(), 0.5f, 0.3f);
+		case 1: // Single Tile Movement Testing 0.7 for 1 tile, 1.2 for 2 tiles
+//			this.moveSec(Timer.instance(), 1.8f, 0.3f);
 			// serialThread.sendEvent(new MotorControlEvent(
 			// MotorControlEvent.MOTOR_LEFT,
 			// MotorControlEvent.MOTOR_FORWARD, 0));
@@ -173,15 +181,15 @@ public class XORController extends ControllerAdapter implements
 			// MotorControlEvent.MOTOR_RIGHT,
 			// MotorControlEvent.MOTOR_FORWARD, 0));
 			break;
-		case 2:
+		case 2: // Rotation Value Testing
 			timing = !timing;
 			if (timing) {
 				serialThread.sendEvent(new MotorControlEvent(
 						MotorControlEvent.MOTOR_LEFT,
-						MotorControlEvent.MOTOR_BACKWARD, 0));
+						MotorControlEvent.MOTOR_FORWARD, 0));
 				serialThread.sendEvent(new MotorControlEvent(
 						MotorControlEvent.MOTOR_RIGHT,
-						MotorControlEvent.MOTOR_FORWARD, 0));
+						MotorControlEvent.MOTOR_BACKWARD, 0));
 
 				lastTick = System.currentTimeMillis();
 			} else {
@@ -194,33 +202,51 @@ public class XORController extends ControllerAdapter implements
 				System.out.println(System.currentTimeMillis() - lastTick);
 			}
 			break;
-		case 4: // L1
+		case 4: // L1 Left Gripper
 			leftHolderGrab = !leftHolderGrab;
 			serialThread.sendEvent(new PneumaticsControlEvent(
 					PneumaticsControlEvent.VALVE_LEFT_GRIPPER, leftHolderGrab));
 			break;
-		case 5: // R1
+		case 5: // R1 Right Gripper
 			rightHolderGrab = !rightHolderGrab;
 			serialThread
 					.sendEvent(new PneumaticsControlEvent(
 							PneumaticsControlEvent.VALVE_RIGHT_GRIPPER,
 							rightHolderGrab));
 			break;
-		case 6: // L2 Recording Start
-			recording = !recording;
-			System.out.println(recording ? "Start recording."
-					: "End recording.");
-			if (recording) {
-				recorder.clearMovesFile();
+		case 6: // L2 Recording Start Track
+			recordingStart = !recordingStart;
+			System.out.println(recordingStart ? "Start track - Started recording."
+					: "Start track - Ended recording.");
+			if (recordingStart) {
+				startRecorder.clearMovesFile();
+				recorderInitTime = System.currentTimeMillis();
 			}
 			break;
-		case 7: // R2 Recording Playback
-			
+		case 7: // R2 Recording End Track
+			recordingEnd = !recordingEnd;
+			System.out.println(recordingEnd ? "End track - Started recording."
+					: "End track - Ended recording.");
+			if (recordingEnd) {
+				endRecorder.clearMovesFile();
+				recorderInitTime = System.currentTimeMillis();
+			}
 			break;
-		case 8: // Select Up
-			holdersUp = !holdersUp;
-			serialThread.sendEvent(new PneumaticsControlEvent(
-					PneumaticsControlEvent.VALVE_PULL_GRIPPERS, holdersUp));
+		case 8: // Select Button - Playback Start Track
+			startRecorder.playbackMoves(serialThread);
+			break;
+		case 9: // Start Button - Playback End Track
+			endRecorder.playbackMoves(serialThread);
+			break;
+			
+		case 11: //Emergy Stop Button (Right Button Joystick Thing)
+			serialThread.sendEvent(new MotorControlEvent(
+					MotorControlEvent.MOTOR_LEFT,
+					MotorControlEvent.MOTOR_FORWARD, 200));
+			serialThread.sendEvent(new MotorControlEvent(
+					MotorControlEvent.MOTOR_RIGHT,
+					MotorControlEvent.MOTOR_FORWARD, 200));
+			Timer.instance().clear();
 			break;
 		}
 		return false;
@@ -255,10 +281,16 @@ public class XORController extends ControllerAdapter implements
 		int rightMotorScaled = MAX_MOTOR_PWM
 				- MathUtils.round(Math.abs(rightMotor) * initialPwm);
 
-		if (recording) {
-			recorder.logMove(new ControllerEvent(System.currentTimeMillis()
-					- recorderInitTime, leftMotorScaled, rightMotorScaled,
-					leftMotorDir, rightMotorDir));
+		if (recordingStart) {
+			startRecorder.logMove(new ControllerEvent(System
+					.currentTimeMillis() - recorderInitTime, leftMotorScaled,
+					rightMotorScaled, leftMotorDir, rightMotorDir));
+		}
+		
+		if (recordingEnd) {
+			endRecorder.logMove(new ControllerEvent(System
+					.currentTimeMillis() - recorderInitTime, leftMotorScaled,
+					rightMotorScaled, leftMotorDir, rightMotorDir));
 		}
 
 		settingsWindow.showMotorPos(MathUtils.ceil(leftMotor * initialPwm),
@@ -275,17 +307,12 @@ public class XORController extends ControllerAdapter implements
 	int count = 0;
 
 	public float rotate(final Timer timer, float degrees, float startTime) {
-		float timeFactor = (Math.abs(degrees) / 90f) * 0.48f;
-		count++;
-		if (count >= 10) {
-			count = 0;
-		}
-
+		float timeFactor = (Math.abs(degrees) / 90f) * 0.52f;
 		final boolean direction = degrees > 0; // True = CW, False = CCW
 
 		if (direction) {
 			if (Math.abs(degrees) == 45)
-				timeFactor = this.getDegreeDelay45(count);
+				timeFactor = 0.2853f;
 			else if (Math.abs(degrees) == 90)
 				timeFactor = 0.6356f;
 		} else {
@@ -362,32 +389,23 @@ public class XORController extends ControllerAdapter implements
 		return timePerTile * f;
 	}
 
-	public float moveSec(final Timer timer, final float time,
-			final float reboundTime) {
-		serialThread.sendEvent(new MotorControlEvent(
-				MotorControlEvent.MOTOR_LEFT, MotorControlEvent.MOTOR_FORWARD,
-				0));
-		serialThread.sendEvent(new MotorControlEvent(
-				MotorControlEvent.MOTOR_RIGHT, MotorControlEvent.MOTOR_FORWARD,
-				0));
-		// float finalReboundTime = 0;
-		// for (float i = 0, n = 0; i < reboundTime; i += reboundTime / 10, n++)
-		// {
-		// int magnitude = (int) (((200 / 10) * n));
-		// timer.scheduleTask(new Task() {
-		//
-		// @Override
-		// public void run() {
-		// serialThread.sendEvent(new MotorControlEvent(
-		// MotorControlEvent.MOTOR_LEFT,
-		// MotorControlEvent.MOTOR_FORWARD, magnitude));
-		// serialThread.sendEvent(new MotorControlEvent(
-		// MotorControlEvent.MOTOR_RIGHT,
-		// MotorControlEvent.MOTOR_FORWARD, magnitude));
-		// }
-		//
-		// }, finalReboundTime = time + i);
-		// }
+	public float moveSec(final Timer timer, float time,
+			final float reboundTime, final float startTime) {
+		time = this.getTilesPerDistance(time) * 1.2f;
+		timer.scheduleTask(new Task() {
+
+			@Override
+			public void run() {
+				serialThread.sendEvent(new MotorControlEvent(
+						MotorControlEvent.MOTOR_LEFT, MotorControlEvent.MOTOR_FORWARD,
+						0));
+				serialThread.sendEvent(new MotorControlEvent(
+						MotorControlEvent.MOTOR_RIGHT, MotorControlEvent.MOTOR_FORWARD,
+						0));
+			}
+
+		}, startTime);
+
 		timer.scheduleTask(new Task() {
 
 			@Override
@@ -400,7 +418,7 @@ public class XORController extends ControllerAdapter implements
 						MotorControlEvent.MOTOR_BACKWARD, 150));
 			}
 
-		}, time);
+		}, startTime + time);
 		timer.scheduleTask(new Task() {
 
 			@Override
@@ -413,8 +431,8 @@ public class XORController extends ControllerAdapter implements
 						MotorControlEvent.MOTOR_FORWARD, 200));
 			}
 
-		}, time + reboundTime);
-		return time;
+		}, startTime + time + reboundTime);
+		return time + reboundTime;
 	}
 
 	// Moves through tiles with a 0.05 second backwards movement to mitigate
@@ -473,20 +491,30 @@ public class XORController extends ControllerAdapter implements
 	public void followPath(List<GridCell> path) {
 		Timer t = new Timer();
 
-		float lastAngle = 0;
+//		float lastAngle = 0;
+//		float time = 0;
+//		for (int i = 1; i < path.size(); i++) {
+//			GridCell last = path.get(i - 1);
+//			GridCell current = path.get(i);
+//
+//			float angle = new Vector2(current.x - last.x, current.y - last.y)
+//					.angle();
+//			time += rotate(t, (int) (angle - lastAngle), time) + 0.1f;
+//			time += this.moveSec(t, new Vector2(last.x, last.y).dst(new Vector2(
+//					current.x, current.y)), 0.3f, time);
+//			lastAngle = angle;
+//
+//		}
+		
 		float time = 0;
-		for (int i = 1; i < path.size(); i++) {
-			GridCell last = path.get(i - 1);
-			GridCell current = path.get(i);
-
-			float angle = new Vector2(current.x - last.x, current.y - last.y)
-					.angle();
-			time += rotate(t, (int) (angle - lastAngle), time) + 0.1f;
-			time += move(t, new Vector2(last.x, last.y).dst(new Vector2(
-					current.x, current.y)), time);
-			lastAngle = angle;
-
-		}
+		time += this.rotate(t, 45, time);
+		time += this.moveSec(t, (float) Math.sqrt(2), 0.3f,  time) + 0.5f;
+		time += this.rotate(t, 45, time);
+		time += this.moveSec(t, 3, 0.3f, time) + 0.5f;
+		time += this.rotate(t, -45, time);
+		time += this.moveSec(t, 2, 0.1f, time + 0.5f) + 1f;
+		time += this.rotate(t, -30, time + 0.5f) + 1f;
+		time += this.moveSec(t, 1, 0.5f, time + 0.5f) + 0.5f;
 		t.start();
 	}
 

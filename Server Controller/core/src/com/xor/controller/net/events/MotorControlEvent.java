@@ -54,7 +54,7 @@ public class MotorControlEvent extends XOREvent {
 		} else {
 			putInt(direction);
 		}
-		putInt(type == MOTOR_LEFT ? Math.min(200, magnitude + 10) : magnitude);
+		putInt(type == MOTOR_LEFT ? magnitude : magnitude);
 	}
 
 }
