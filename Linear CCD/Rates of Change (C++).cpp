@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: 20 Nov 2015
- *      Author: user
+ *  Author: Felicia
  */
 
 #include <iostream>
